@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import logo from './assets/images/EMConstructionLogo.png';
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         
         <Image
-          src="/EMConstructionLogo.png"
+          src={logo}
           alt="EM Construction Logo"
           width={100}
           height={100}
