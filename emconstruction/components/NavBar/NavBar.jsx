@@ -23,9 +23,9 @@ export default function NavBar() {
                     </Link>
                 </div>
                 <div className="hidden md:flex space-x-4">
-                    <Link className='text-blue-700' href="/">Home</Link>
-                    <Link className='text-blue-700' href="/appointment">Contact</Link>
-                    <Link className='text-blue-700' href="/portfolio">Portfolio</Link>
+                    <Link className='text-gray-700' href="/">Home</Link>
+                    <Link className='text-gray-700' href="/Contact">Contact</Link>
+                    <Link className='text-gray-700' href="/Portfolio">Portfolio</Link>
                 </div>
                 <div className="md:hidden">
                 <button onClick={handleMenuToggle} className="text-gray-700 focus:outline-none">

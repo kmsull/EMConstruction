@@ -9,8 +9,8 @@ export default function Home() {
         <Image
           src={logo}
           alt="EM Construction Logo"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           priority
         />
 
