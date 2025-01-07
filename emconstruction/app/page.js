@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from '../constants/Images/Logo/EMConstructionLogo.png';
+import logo from '../constants/images/logo/EMConstructionLogo.png';
 
 export default function Home() {
   return (
