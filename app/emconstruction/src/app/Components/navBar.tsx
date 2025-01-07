@@ -1,7 +1,7 @@
 import React from 'react';
 import '../globals.css'
 import Link from 'next/link'
-import logo from './assets/images/EMConstructionLogo.png';
+import logo from '../assets/images/EMConstructionLogo.png';
 
 const NavBar = () => {
     return (
