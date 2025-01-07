@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const Portfolio = () => {
@@ -6,7 +5,6 @@ const Portfolio = () => {
         <div>
             <h1> Check out my previous work </h1>
         </div>
-
     );
 };
 
