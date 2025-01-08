@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../constants/images/logo/EMConstructionLogo.png';
 import MenuPopup from './MenuPopup/MenuPopup';
+import Popover from './Popover/Popover'
 
 export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -16,16 +17,18 @@ export default function NavBar() {
 
     return (
         <nav className="bg-white shadow-md">
-            <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-                <div className="flex items-center">
+            <div className="container mx-auto py-2 flex items-center place-content-center space-x-40">
+                <div className="hidden md:flex items-center">
                     <Link href="/">
-                        <Image className='flex items-center' src={logo} alt="EM Construction Logo" width={64} height={64} />
+                        <Image src={logo} alt="EM Construction Logo" width={64} height={64} />
                     </Link>
+                    <Link className='navigationText' href="/">Home</Link>
                 </div>
-                <div className="hidden md:flex space-x-4">
-                    <Link className='text-gray-700' href="/">Home</Link>
-                    <Link className='text-gray-700' href="/Contact">Contact</Link>
-                    <Link className='text-gray-700' href="/Portfolio">Portfolio</Link>
+                <div className="hidden md:flex space-x-40">
+                    <Popover />
+                </div>
+                <div className="hidden md:flex space-x-40">
+                    <Link className='navigationText' href="/Contact">Contact</Link>
                 </div>
                 <div className="md:hidden">
                 <button onClick={handleMenuToggle} className="text-gray-700 focus:outline-none">

@@ -14,15 +14,16 @@
   }
 }
 
+@layer components {
+    .navigationText {
+      @apply text-gray-700 text-2xl
+    }
+    .popoverText {
+      @apply text-gray-700 text-lg
+    }
+}
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-navigation {
-  border-color: black;
-  border-width: 1;
-  flex: auto;
-  flex-direction: row;
 }

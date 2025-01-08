@@ -3,7 +3,7 @@ import React from "react";
 const Portfolio = () => {
     return (
         <div>
-            <h1> This is the main portfolio page </h1>
+            <h1> Check out my siding work </h1>
         </div>
     );
 };

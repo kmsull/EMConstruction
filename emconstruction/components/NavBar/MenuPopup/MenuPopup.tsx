@@ -22,13 +22,10 @@ const MenuPopup: React.FC<MenuPopupProps> = ({ onClick, active }) => {
                     <Link href="/" className="text-blue-700 block py-2" onClick={onClick}>Home</Link>
                 </li>
                 <li>
-                    <Link href="/services" className="text-blue-700 block py-2" onClick={onClick}>Services</Link>
+                    <Link href="/Contact" className="text-blue-700 block py-2" onClick={onClick}>Contact</Link>
                 </li>
                 <li>
-                    <Link href="/appointment" className="text-blue-700 block py-2" onClick={onClick}>Appointment</Link>
-                </li>
-                <li>
-                    <Link href="/portfolio" className="text-blue-700 block py-2" onClick={onClick}>Portfolio</Link>
+                    <Link href="/Portfolio" className="text-blue-700 block py-2" onClick={onClick}>Portfolio</Link>
                 </li>
             </ul>
         </div>
