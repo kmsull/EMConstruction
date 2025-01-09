@@ -9,17 +9,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #04162b;
+    --foreground: #ffffff;
   }
 }
 
 @layer components {
     .navigationText {
-      @apply text-gray-700 text-2xl
+      @apply text-gray-700 text-2xl border-2 px-8 rounded-xl border-gray-300 bg-gray-200 hover:bg-gray-400 hover:text-black hover:border-gray-500
     }
     .popoverText {
-      @apply text-gray-700 text-lg
+      @apply text-gray-700 text-lg border-2 px-2 rounded-xl border-gray-300 bg-gray-200 hover:bg-gray-400 hover:text-black
+    }
+    .contactButton {
+      @apply inline-flex items-center gap-2 rounded-md bg-gray-500 py-1.5 px-3 text-sm/6 font-semibold text-gray-50 shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white
     }
 }
 body {

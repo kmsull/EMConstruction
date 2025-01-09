@@ -1,4 +1,5 @@
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
+import '../../../app/globals.css'
 
 export default function Example() {
     return (
@@ -11,7 +12,7 @@ export default function Example() {
                     <PopoverPanel
                         transition
                         anchor="bottom"
-                        className="rounded-xl bg-white text-gray-700 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+                        className="pt-4 rounded-xl bg-background text-gray-700 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
                     >
                         <div>
                             <a className="block rounded-lg py-2 px-1 transition hover:bg-white/5" href="/Portfolio/Stone">

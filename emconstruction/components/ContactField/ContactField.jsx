@@ -1,11 +1,11 @@
 import React from 'react'
-import { Description, Field, Fieldset, Input, Label, Legend, Select, Textarea } from '@headlessui/react'
+import { Description, Field, Fieldset, Input, Label, Legend, Select, Textarea, Button } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import clsx from 'clsx'
 
 export default function ContactField() {
     return (
-        <div className="w-full max-w-lg px-4">
+        <div className="w-full max-w-2xl px-4">
             <Fieldset className="space-y-6 rounded-xl bg-white/5 p-6 sm:p-10">
                 <Legend className="text-base/7 font-semibold text-white">Contact Information</Legend>
                 <Field>
@@ -50,7 +50,9 @@ export default function ContactField() {
                         />
                     </div>
                 </Field>
-
+                <div className='flex justify-end'>
+                    <Button className="contactButton px-12"> Send! </Button>
+                </div>
             </Fieldset>
         </div>
     )
