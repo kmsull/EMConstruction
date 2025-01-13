@@ -14,6 +14,7 @@ export default function Home() {
             width={500}
             height={500}
             priority
+            className="rounded-[25%]"
           />
         </div>
         <div className="text-center px-20 place-content-center">
